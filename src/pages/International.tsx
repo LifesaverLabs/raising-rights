@@ -8,18 +8,24 @@ import { Mail, Globe, ExternalLink } from "lucide-react";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-// Countries with voting ages below 18
+// Countries with voting ages below 18 (using world-atlas numeric country IDs)
 const countriesData: Record<string, { votingAge: number; details: string }> = {
-  "AUT": { votingAge: 16, details: "Austria lowered its voting age to 16 in 2007, one of the first European countries to do so." },
-  "ARG": { votingAge: 16, details: "Argentina allows optional voting at 16 and mandatory voting at 18." },
-  "BRA": { votingAge: 16, details: "Brazil permits optional voting from age 16, with mandatory voting beginning at 18." },
-  "CUB": { votingAge: 16, details: "Cuba allows citizens to vote at 16 in all elections." },
-  "ECU": { votingAge: 16, details: "Ecuador allows optional voting from age 16." },
-  "NIC": { votingAge: 16, details: "Nicaragua set its voting age at 16 in 1984." },
-  "SCT": { votingAge: 16, details: "Scotland lowered the voting age to 16 for Scottish Parliament and local elections." },
-  "MLT": { votingAge: 16, details: "Malta allows voting at 16 for local council elections." },
-  "GBR": { votingAge: 16, details: "The UK allows 16-year-olds to vote in some regional elections (Scotland, Wales)." },
-  "DEU": { votingAge: 16, details: "Germany allows 16-year-olds to vote in some state and local elections." },
+  // Voting age 16
+  "032": { votingAge: 16, details: "Argentina allows optional voting at 16 and mandatory voting at 18." },
+  "040": { votingAge: 16, details: "Austria lowered its voting age to 16 in 2007, one of the first European countries to do so." },
+  "076": { votingAge: 16, details: "Brazil permits optional voting from age 16, with mandatory voting beginning at 18." },
+  "192": { votingAge: 16, details: "Cuba allows citizens to vote at 16 in all elections." },
+  "218": { votingAge: 16, details: "Ecuador allows optional voting from age 16." },
+  "558": { votingAge: 16, details: "Nicaragua set its voting age at 16 in 1984." },
+  "470": { votingAge: 16, details: "Malta allows voting at 16 for local council elections." },
+  "833": { votingAge: 16, details: "Isle of Man allows voting at 16 for all elections." },
+  "831": { votingAge: 16, details: "Guernsey allows voting at 16 for all elections." },
+  "826": { votingAge: 16, details: "The UK allows 16-year-olds to vote in some regional elections (Scotland, Wales, and some local elections)." },
+  
+  // Voting age 17
+  "360": { votingAge: 17, details: "Indonesia allows citizens to vote at 17 or if they are married." },
+  "408": { votingAge: 17, details: "North Korea allows voting at 17 in all elections." },
+  "626": { votingAge: 17, details: "Timor-Leste set its voting age at 17." },
 };
 
 const International = () => {
@@ -84,13 +90,19 @@ const International = () => {
                             }}
                             style={{
                               default: {
-                                fill: isHighlighted ? "hsl(var(--secondary))" : "hsl(var(--muted))",
+                                fill: isHighlighted 
+                                  ? countryInfo.votingAge === 16 
+                                    ? "hsl(var(--secondary))" 
+                                    : "hsl(var(--accent))"
+                                  : "hsl(var(--muted))",
                                 stroke: "hsl(var(--border))",
                                 strokeWidth: 0.5,
                                 outline: "none",
                               },
                               hover: {
-                                fill: isHighlighted ? "hsl(var(--accent))" : "hsl(var(--muted-foreground))",
+                                fill: isHighlighted 
+                                  ? "hsl(var(--primary))" 
+                                  : "hsl(var(--muted-foreground))",
                                 stroke: "hsl(var(--border))",
                                 strokeWidth: 0.5,
                                 outline: "none",
@@ -118,8 +130,16 @@ const International = () => {
               </div>
 
               {selectedCountry && countriesData[selectedCountry] && (
-                <div className="mt-6 p-6 bg-secondary/10 border border-secondary/20 rounded-lg">
-                  <h3 className="text-xl font-serif font-bold mb-2 text-secondary">
+                <div className={`mt-6 p-6 rounded-lg border ${
+                  countriesData[selectedCountry].votingAge === 16 
+                    ? 'bg-secondary/10 border-secondary/20' 
+                    : 'bg-accent/10 border-accent/20'
+                }`}>
+                  <h3 className={`text-xl font-serif font-bold mb-2 ${
+                    countriesData[selectedCountry].votingAge === 16 
+                      ? 'text-secondary' 
+                      : 'text-accent'
+                  }`}>
                     Voting Age: {countriesData[selectedCountry].votingAge}
                   </h3>
                   <p className="text-muted-foreground">
@@ -128,10 +148,14 @@ const International = () => {
                 </div>
               )}
 
-              <div className="mt-8 text-sm text-muted-foreground">
+              <div className="mt-8 space-y-2 text-sm text-muted-foreground">
                 <p className="flex items-center gap-2">
                   <span className="inline-block w-4 h-4 rounded bg-secondary"></span>
-                  Countries with voting ages below 18 (click to learn more)
+                  Voting age 16 (click countries to learn more)
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="inline-block w-4 h-4 rounded bg-accent"></span>
+                  Voting age 17 (click countries to learn more)
                 </p>
               </div>
             </div>
