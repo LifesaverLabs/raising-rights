@@ -55,6 +55,10 @@ export const HeroSection = () => {
               <span className="text-civic-amber font-semibold">Wrights</span> who build democracy.
             </p>
             
+            <p className="text-xl md:text-2xl font-semibold text-primary mb-2">
+              Suffering demands suffrage.
+            </p>
+            
             <p className="text-base md:text-lg text-foreground/80 italic border-l-4 border-primary pl-4 py-2">
               Those who bear the long-term consequences deserve a voice in shaping them.
             </p>
