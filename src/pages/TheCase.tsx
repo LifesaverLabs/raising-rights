@@ -277,6 +277,111 @@ const TheCase = () => {
             </div>
           </div>
         </section>
+
+        {/* Service Rites */}
+        <section className="py-20 bg-muted/30">
+          <div className="container max-w-4xl">
+            <h2 className="text-4xl font-serif font-bold mb-6" id="service-rites">
+              Service Rites: Training for Citizenship
+            </h2>
+            
+            <div className="space-y-8 text-lg leading-relaxed">
+              <div>
+                <h3 className="text-2xl font-serif font-bold mb-4 text-civic-amber">
+                  The Duty to Rescue
+                </h3>
+                <p>
+                  Citizenship carries responsibilities as well as rights. One of the most fundamental is the duty 
+                  to rescue—to act when another person's life is in danger and you have the capacity to help.
+                </p>
+                <p className="mt-4">
+                  We propose universal training in <strong>CPR/AED and First Aid</strong> as a foundational element 
+                  of civic education. Every person should have the knowledge and confidence to intervene in medical 
+                  emergencies. These skills save lives—and learning them builds the habit of active citizenship.
+                </p>
+                <div className="civic-card mt-6">
+                  <p className="font-semibold mb-3">Why Universal Rescue Training Matters:</p>
+                  <ul className="space-y-2">
+                    <li>• Cardiac arrest survival rates triple when bystanders perform CPR</li>
+                    <li>• Bleeding control and basic first aid prevent deaths before professionals arrive</li>
+                    <li>• Training builds confidence to act rather than freeze in emergencies</li>
+                    <li>• Collective competence creates safer communities for everyone</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-serif font-bold mb-4 text-civic-amber">
+                  A Year of Service: Peak Capacity, Public Good
+                </h3>
+                <p>
+                  As part of the experience of becoming a full citizen, we advocate for <strong>one year of civic 
+                  or national service for all youth before age 25</strong>—at the peak of neural capacity, physical 
+                  capability, and openness to formative experiences.
+                </p>
+                <p className="mt-4">
+                  This is not conscription with a single path. We propose <strong>flexible timing and diverse 
+                  options</strong>, allowing each person to decide when to serve and how to apply their unique 
+                  talents to the public good.
+                </p>
+              </div>
+
+              <div className="civic-card">
+                <h3 className="text-2xl font-serif font-bold mb-4">Service Options</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-2">Military Service</h4>
+                    <p>Service in the National Reserves or active-duty U.S. Military, defending the nation and 
+                    developing leadership, discipline, and technical skills.</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-xl font-semibold text-secondary mb-2">Nonprofit Service</h4>
+                    <p>A service year working with qualifying nonprofit organizations addressing education, 
+                    healthcare, environmental conservation, disaster relief, or community development.</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-xl font-semibold text-accent mb-2">Skilled Service</h4>
+                    <p>Complete trade school or college training first, then devote one year to applying those 
+                    skills for the public good. Examples: medical professionals serving underserved areas, 
+                    engineers working on infrastructure in disadvantaged communities, educators teaching in 
+                    high-need schools, technologists building civic technology.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-civic-amber/10 p-8 rounded-lg border-l-4 border-civic-amber">
+                <h3 className="text-2xl font-serif font-bold mb-4">Why Service Rites Matter</h3>
+                <div className="space-y-4">
+                  <p>
+                    <strong>Shared experience across class lines:</strong> Service brings together youth from 
+                    different backgrounds, building social cohesion and mutual understanding.
+                  </p>
+                  <p>
+                    <strong>Investment in collective capacity:</strong> A society where everyone has contributed 
+                    a year of service is stronger, more resilient, and more connected.
+                  </p>
+                  <p>
+                    <strong>Meaningful rite of passage:</strong> Earning citizenship through service creates a 
+                    profound sense of belonging and responsibility that passive inheritance cannot match.
+                  </p>
+                  <p>
+                    <strong>Skills that last:</strong> Whether it's military training, community organizing, 
+                    emergency response, or skilled trades, service builds competencies that benefit participants 
+                    and society for decades.
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-xl font-semibold text-civic-amber">
+                Service Rites complete the trilogy: Learning prepares the mind, Voting engages the will, 
+                and Service builds the capacity for collective action. Together, they form a pathway to 
+                meaningful citizenship.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
