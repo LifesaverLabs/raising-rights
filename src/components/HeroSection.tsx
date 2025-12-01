@@ -14,13 +14,15 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="container relative z-10 text-center space-y-8 py-20">
         <div className="space-y-6">
-          <div className="relative h-32 flex items-center justify-center">
-            <h1 className="absolute inset-0 flex items-center justify-center text-5xl md:text-7xl font-serif font-bold">
-              Raising <span className="hero-word-rights ml-3">Rights</span>
-              <span className="hero-word-rites ml-3 absolute">Rites</span>
-              <span className="hero-word-wrights ml-3 absolute">Wrights</span>
-            </h1>
-          </div>
+          <h1 className="text-5xl md:text-7xl font-serif font-bold flex items-center justify-center gap-3">
+            Raising 
+            <span className="relative inline-block min-w-[200px] md:min-w-[280px]">
+              <span className="hero-word-rights absolute left-0 top-0">Rights</span>
+              <span className="hero-word-rites absolute left-0 top-0">Rites</span>
+              <span className="hero-word-wrights absolute left-0 top-0">Wrights</span>
+              <span className="invisible">Rights</span>
+            </span>
+          </h1>
           
           <p className="text-2xl md:text-3xl font-serif text-muted-foreground">
             Designing the Future Together
