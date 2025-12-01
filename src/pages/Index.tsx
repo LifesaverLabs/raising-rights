@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { CountryRibbon } from "@/components/CountryRibbon";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { ThreePillars } from "@/components/ThreePillars";
@@ -11,6 +12,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <CountryRibbon />
       <main>
         <HeroSection />
         <ThreePillars />
