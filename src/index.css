@@ -121,16 +121,19 @@ All colors MUST be HSL.
   .hero-word-rights {
     animation: fadeInOut 7.5s infinite;
     color: hsl(var(--rights-blue));
+    opacity: 0;
   }
 
   .hero-word-rites {
     animation: fadeInOut 7.5s infinite 2.5s;
     color: hsl(var(--rites-green));
+    opacity: 0;
   }
 
   .hero-word-wrights {
     animation: fadeInOut 7.5s infinite 5s;
     color: hsl(var(--wrights-amber));
+    opacity: 0;
   }
 
   /* Smooth hover transitions */
