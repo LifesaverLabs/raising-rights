@@ -72,7 +72,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Raising Rights. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Lifesaver Labs Coalition. See LICENSE.md.</p>
         </div>
       </div>
     </footer>

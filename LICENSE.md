@@ -30,7 +30,7 @@ All **code** (source code, scripts, configuration files, and other software) is 
 
 ### MIT License
 
-Copyright (c) 2025 Raising Rights
+Copyright (c) 2025 Lifesaver Labs Coalition
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
