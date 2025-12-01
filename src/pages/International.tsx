@@ -176,13 +176,17 @@ const International = () => {
 
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="gap-2">
-                    <Mail className="h-4 w-4" />
-                    Contact Us to Collaborate
+                  <Button size="lg" className="gap-2" asChild>
+                    <a href="mailto:team@lifesaverlabs.org?subject=International Youth Suffrage Collaboration">
+                      <Mail className="h-4 w-4" />
+                      Contact Us to Collaborate
+                    </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="gap-2">
-                    <Globe className="h-4 w-4" />
-                    Share This Domain
+                  <Button size="lg" variant="outline" className="gap-2" asChild>
+                    <a href="mailto:team@lifesaverlabs.org?subject=Raising Rights Domain Sharing">
+                      <Globe className="h-4 w-4" />
+                      Share This Domain
+                    </a>
                   </Button>
                 </div>
 
