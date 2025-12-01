@@ -57,6 +57,16 @@ export const Footer = () => {
                   StudentVote.us
                 </a>
               </li>
+              <li>
+                <a 
+                  href="https://www.civicreligion.us" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  Civic Religion
+                </a>
+              </li>
             </ul>
           </div>
         </div>
