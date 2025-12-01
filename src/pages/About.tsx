@@ -38,15 +38,6 @@ const About = () => {
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="civic-card">
-                <h3 className="text-xl font-serif font-bold mb-3 text-civic-blue">
-                  Equal votes, not weighted votes
-                </h3>
-                <p className="text-muted-foreground">
-                  One person, one vote, regardless of age
-                </p>
-              </div>
-
-              <div className="civic-card">
                 <h3 className="text-xl font-serif font-bold mb-3 text-civic-green">
                   Preparation, not gatekeeping
                 </h3>

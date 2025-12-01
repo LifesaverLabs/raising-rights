@@ -13,8 +13,7 @@ export const WhyThisMatters = () => {
           </p>
           
           <p className="text-xl font-semibold text-primary">
-            Not a louder voice. Not a heavier vote. Simply an equal voice, granted early enough to matter, 
-            with a voting system that honors their true preferences.
+            An equal voice, granted early enough to matter, with a voting system that honors their true preferences.
           </p>
           
           <p>
