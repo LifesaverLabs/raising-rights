@@ -25,7 +25,7 @@ export const HeroSection = () => {
           </h1>
           
           <p className="text-2xl md:text-3xl font-serif text-muted-foreground">
-            Designing the Future Together
+            Youth Suffrage: Designing the Future Together
           </p>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
