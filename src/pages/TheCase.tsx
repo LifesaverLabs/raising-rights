@@ -23,9 +23,9 @@ const TheCase = () => {
         </section>
 
         {/* The Suffering Principle */}
-        <section className="py-20">
+        <section className="py-20" id="suffering-principle">
           <div className="container max-w-4xl">
-            <h2 className="text-4xl font-serif font-bold mb-6" id="suffering-principle">
+            <h2 className="text-4xl font-serif font-bold mb-6">
               The Suffering Principle
             </h2>
             <div className="space-y-6 text-lg leading-relaxed">
@@ -68,9 +68,9 @@ const TheCase = () => {
         </section>
 
         {/* The Parkland Catalyst */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-muted/30" id="parkland">
           <div className="container max-w-4xl">
-            <h2 className="text-4xl font-serif font-bold mb-6" id="parkland">
+            <h2 className="text-4xl font-serif font-bold mb-6">
               The Parkland Catalyst
             </h2>
             <div className="space-y-6 text-lg leading-relaxed">
@@ -103,9 +103,9 @@ const TheCase = () => {
         </section>
 
         {/* Commander-in-Chief */}
-        <section className="py-20">
+        <section className="py-20" id="commander-in-chief">
           <div className="container max-w-4xl">
-            <h2 className="text-4xl font-serif font-bold mb-6" id="commander-in-chief">
+            <h2 className="text-4xl font-serif font-bold mb-6">
               The Commander-in-Chief Contract
             </h2>
             <div className="space-y-6 text-lg leading-relaxed">
@@ -148,9 +148,9 @@ const TheCase = () => {
         </section>
 
         {/* The Consent Gap */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-muted/30" id="consent-gap">
           <div className="container max-w-4xl">
-            <h2 className="text-4xl font-serif font-bold mb-6" id="consent-gap">
+            <h2 className="text-4xl font-serif font-bold mb-6">
               The Consent Gap
             </h2>
             <div className="space-y-6 text-lg leading-relaxed">
@@ -182,9 +182,9 @@ const TheCase = () => {
         </section>
 
         {/* Ranked Choice Voting */}
-        <section className="py-20">
+        <section className="py-20" id="ranked-choice">
           <div className="container max-w-4xl">
-            <h2 className="text-4xl font-serif font-bold mb-6" id="ranked-choice">
+            <h2 className="text-4xl font-serif font-bold mb-6">
               Why Ranked Choice Voting Is Essential to Consent
             </h2>
             
@@ -279,9 +279,9 @@ const TheCase = () => {
         </section>
 
         {/* Service Rites */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-muted/30" id="service-rites">
           <div className="container max-w-4xl">
-            <h2 className="text-4xl font-serif font-bold mb-6" id="service-rites">
+            <h2 className="text-4xl font-serif font-bold mb-6">
               Service Rites: Training for Citizenship
             </h2>
             
