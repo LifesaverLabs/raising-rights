@@ -104,7 +104,7 @@ const TakeAction = () => {
                 
                 <div className="flex justify-center">
                   <Turnstile
-                    siteKey="1x00000000000000000000AA"
+                    siteKey="0x4AAAAAACD5sWEKc01JJMZT"
                     onSuccess={(token) => setCaptchaToken(token)}
                     onError={() => setCaptchaToken("")}
                     onExpire={() => setCaptchaToken("")}
