@@ -7,14 +7,26 @@ import { Download, Mail, Users, BookOpen, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 const TakeAction = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string>("");
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (!captchaToken) {
+      toast({
+        title: "Verification Required",
+        description: "Please complete the CAPTCHA verification.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
     setIsSubmitting(true);
 
     try {
@@ -38,6 +50,7 @@ const TakeAction = () => {
           description: "We'll be in touch soon with ways to get involved.",
         });
         setEmail("");
+        setCaptchaToken("");
       }
     } catch (error) {
       console.error("Error subscribing to mailing list:", error);
@@ -88,11 +101,25 @@ const TakeAction = () => {
                     required
                   />
                 </div>
+                
+                <div className="flex justify-center">
+                  <Turnstile
+                    siteKey="1x00000000000000000000AA"
+                    onSuccess={(token) => setCaptchaToken(token)}
+                    onError={() => setCaptchaToken("")}
+                    onExpire={() => setCaptchaToken("")}
+                    options={{
+                      theme: "light",
+                      size: "normal",
+                    }}
+                  />
+                </div>
+                
                 <Button 
                   type="submit" 
                   size="lg" 
                   className="w-full bg-primary hover:bg-primary/90"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || !captchaToken}
                 >
                   {isSubmitting ? "Joining..." : "Join Now"}
                 </Button>
