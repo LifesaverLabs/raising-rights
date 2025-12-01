@@ -59,12 +59,12 @@ export const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://www.civicreligion.us" 
+                  href="https://www.civilreligion.us" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-foreground transition-colors"
                 >
-                  Civic Religion
+                  Civil Religion
                 </a>
               </li>
             </ul>
