@@ -18,12 +18,6 @@ const TheCase = () => {
                 (January 20). This page explains why—through philosophical argument, mathematical proof, and 
                 practical reasoning.
               </p>
-              <p className="text-xl font-semibold text-foreground border-l-4 border-primary pl-4">
-                A note on equal votes: We are not arguing that young people deserve more voting power than 
-                older citizens. A 14-year-old's vote should count exactly the same as an 80-year-old's vote: 
-                one person, one vote. What we seek is equal access to the franchise—the same right to participate 
-                that every adult citizen enjoys.
-              </p>
             </div>
           </div>
         </section>
@@ -67,9 +61,7 @@ const TheCase = () => {
               </ul>
 
               <p className="text-xl bg-muted/50 p-6 rounded-lg">
-                This is not an argument for weighted voting. It is an argument for inclusion. Those who bear 
-                consequences deserve equal voice—not amplified voice, not privileged voice, but the same voice 
-                currently denied to them.
+                Those who bear consequences deserve a voice in the decisions that shape their lives.
               </p>
             </div>
           </div>

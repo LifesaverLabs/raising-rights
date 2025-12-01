@@ -71,12 +71,6 @@ const objections = [
     response: "The premise inverts the burden of proof. We do not require youth to demonstrate superior judgment—only legitimate interest and basic reasoning capacity. Both are present. The question is not 'are 14-year-olds wiser than 50-year-olds?' but 'do 14-year-olds have interests that deserve equal representation?' They do.",
   },
   {
-    id: "weighted-voting",
-    question: "If young people will live longer with election consequences, should their votes count more?",
-    contrary: "No. We firmly reject weighted voting. One person, one vote—regardless of age, life expectancy, education, wealth, or any other characteristic.",
-    response: "The fact that young voters will live with consequences longer is an argument for their inclusion in the franchise, not for weighting their votes more heavily. An 80-year-old and a 14-year-old casting ballots on the same day should have exactly equal electoral weight. What we seek is equal access, not privileged access. The longevity argument supports inclusion; it does not support any departure from equal voting power.",
-  },
-  {
     id: "rcv-complicated",
     question: "Ranked choice voting is too complicated.",
     contrary: "Ranked choice voting asks voters to do what they already do mentally—rank their preferences. It simply allows them to express that ranking on the ballot.",
