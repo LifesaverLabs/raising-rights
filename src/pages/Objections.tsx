@@ -50,7 +50,7 @@ const objections = [
     id: "why-14",
     question: "Why 14 specifically? Why not 12, or 16, or some other age?",
     contrary: "The current age of 18 is equally arbitrary—it was lowered from 21 in 1971 based on the 'old enough to fight, old enough to vote' argument for Vietnam-era draftees.",
-    response: "We propose 14 based on the Commander-in-Chief mathematics (guaranteeing suffrage before military eligibility takes effect), cognitive development research showing sufficient abstract reasoning by early adolescence, and practical alignment with the transition to high school where civic education can be most effectively delivered. The Inauguration Day cutoff (14 by January 20) provides constitutional elegance.",
+    response: "We originally proposed—and still personally prefer—13 as the threshold for guaranteed suffrage. This age honors the coming-of-age traditions of many faith communities: the bar and bat mitzvah, confirmation in various Christian traditions, and similar rites marking the transition to moral responsibility in cultures worldwide. However, on the wise counsel of two 13-year-olds who advised us to 'demean ourselves as good citizens,' we came to appreciate the logic of 14. Setting the guaranteed age at the start of high school—rather than at the capstone of elementary-middle or middle school—creates a clearer cultural milestone in educational systems following the American K-8/9-12 model. (Research also suggests more positive outcomes when elementary and middle school remain combined as K-8, making the high school transition the more natural civic threshold.) The Commander-in-Chief mathematics remain satisfied, and the Inauguration Day cutoff (14 by January 20) provides constitutional elegance.",
   },
   {
     id: "turnout",
@@ -69,6 +69,12 @@ const objections = [
     question: "Adults know better—that's why we have age restrictions.",
     contrary: "History offers scant evidence that adults collectively 'know better.' Adults voted for policies that created climate crisis, unsustainable debt, financial collapses, and countless other harms. Age does not guarantee wisdom.",
     response: "The premise inverts the burden of proof. We do not require youth to demonstrate superior judgment—only legitimate interest and basic reasoning capacity. Both are present. The question is not 'are 14-year-olds wiser than 50-year-olds?' but 'do 14-year-olds have interests that deserve equal representation?' They do.",
+  },
+  {
+    id: "civics-knowledge",
+    question: "Young people don't know enough about government to vote.",
+    contrary: "Studies consistently show that adults perform poorly on basic civics questions. Most cannot name the three branches of government, their congressional representatives, or how many justices sit on the Supreme Court.",
+    response: "Youth in school spend dedicated hours each week grappling with foundational questions of governance, ethics, and public policy—knowledge that fades with time for many adults. Students study the Constitution, the Bill of Rights, the structure of federalism, and the mechanics of elections while these subjects are fresh and tested. They debate the philosophical foundations of rights, analyze primary sources from the Federalist Papers, and examine landmark Supreme Court cases. They learn about international systems, comparative government, and the history of suffrage itself. The civically disengaged adult who last thought seriously about separation of powers in 1987 has no knowledge advantage over the student who analyzed it last Tuesday. Fresh learning, actively reinforced, is more reliable than distant memory, passively decayed.",
   },
   {
     id: "rcv-complicated",
